@@ -51,7 +51,8 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="#contact"
+              href="/resume.pdf"
+              download="Abhinav_KK_Resume.pdf"
               className="btn-primary flex items-center gap-2 text-sm"
             >
               <Download size={16} />
@@ -88,7 +89,8 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="/resume.pdf"
+                download="Abhinav_KK_Resume.pdf"
                 className="btn-primary text-center mt-4 text-sm"
               >
                 Download Resume
