@@ -40,7 +40,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="Logo" 
-              className="h-24 w-500" // Adjust height as needed
+              className="h-40 w-auto object-contain" 
             />
           </a>
 
