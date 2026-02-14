@@ -33,14 +33,14 @@ const Navbar = () => {
         isScrolled ? 'bg-background/80 backdrop-blur-xl border-b border-border/50' : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto pl-2 pr-6">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
+          {/* Logo - Adjusted with -ml-10 for left and mt-4 for down position */}
+          <a href="#home" className="flex items-center -ml-10 mt-4">
             <img 
               src={logo} 
               alt="Logo" 
-              className="h-40 w-auto object-contain" 
+              className="h-56 w-auto object-contain" 
             />
           </a>
 
