@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Download } from 'lucide-react';
-import logo from '@/assets/kk_logo-cropped.svg'; // Replace 'placeholder.svg' with your logo filename
+import logo from '@/assets/kk_logo-cropped.svg';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -33,10 +33,10 @@ const Navbar = () => {
         isScrolled ? 'bg-background/80 backdrop-blur-xl border-b border-border/50' : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto pl-2 pr-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Logo - Adjusted with -ml-10 for left and mt-4 for down position */}
-          <a href="#home" className="flex items-center -ml-10 mt-4">
+          {/* Logo - Centered vertically and aligned to the start of the container */}
+          <a href="#home" className="flex items-center">
             <img 
               src={logo} 
               alt="Logo" 
