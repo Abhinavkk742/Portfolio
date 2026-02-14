@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Download } from 'lucide-react';
-import logo from '@/assets/kk_logo.svg'; // Replace 'placeholder.svg' with your logo filename
+import logo from '@/assets/kk_logo-cropped.svg'; // Replace 'placeholder.svg' with your logo filename
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -40,7 +40,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="Logo" 
-              className="h-56 w-auto object-contain" 
+              className="h-10 w-auto object-contain" 
             />
           </a>
 
