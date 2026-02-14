@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
-import profileImage from '@/assets/profile-abhinav.jpg';
+import profileImage from '@/assets/profile.png';
 
 const HeroSection = () => {
   return (
