@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Download } from 'lucide-react';
-import logo from '@/assets/kk_logo-cropped.svg';
+import logo from '@/assets/kk_logo.svg';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
