@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Download } from 'lucide-react';
+import logo from '@/assets/kk_logo.svg'; // Replace 'placeholder.svg' with your logo filename
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -35,8 +36,12 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="text-2xl font-bold gradient-text">
-            AK
+          <a href="#home" className="flex items-center gap-2">
+            <img 
+              src={logo} 
+              alt="Logo" 
+              className="h-24 w-500" // Adjust height as needed
+            />
           </a>
 
           {/* Desktop Navigation */}
