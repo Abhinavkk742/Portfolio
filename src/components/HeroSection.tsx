@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
-import profileImage from '@/assets/profile.png';
+// CHANGED: Imported the WebP version for faster loading
+import profileImage from '@/assets/profile.webp';
 
 const HeroSection = () => {
   return (
@@ -85,7 +86,8 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            // CHANGED: Removed delay (was 0.3) and reduced duration (was 0.8) for instant feel
+            transition={{ duration: 0.5, delay: 0 }}
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
             <div className="relative">
@@ -98,6 +100,9 @@ const HeroSection = () => {
                   src={profileImage}
                   alt="Abhinav KK"
                   className="w-full h-full object-cover"
+                  // Added priority hints for the browser
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </div>
 
