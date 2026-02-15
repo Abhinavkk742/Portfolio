@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import logo from '@/assets/kk_logo.svg';
 
 const Footer = () => {
   return (
@@ -7,7 +8,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo & Copyright */}
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold gradient-text">AK</span>
+            <img 
+              src={logo} 
+              alt="Logo" 
+              className="h-8 w-auto" 
+            />
             <span className="text-muted-foreground">
               © {new Date().getFullYear()} Abhinav KK. All rights reserved.
             </span>

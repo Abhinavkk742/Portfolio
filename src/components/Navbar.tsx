@@ -40,7 +40,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="Logo" 
-              className="h-10 w-auto object-contain" 
+              className="h-8 w-auto object-contain" 
             />
           </a>
 
