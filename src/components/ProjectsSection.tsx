@@ -20,7 +20,7 @@ const projects = [
       'Dynamic filtering and cart using React Context API',
     ],
     category: 'Full Stack',
-    github: '#',
+    github: 'https://github.com/suja-l/KalyaniTimber',
     demo: '#',
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       'Reduced UI latency by 30%',
     ],
     category: 'AI/ML',
-    github: '#',
+    github: 'https://github.com/Abhinavkk742/Emotion_based_music_recommendation_system',
     demo: '#',
   },
   {
@@ -50,7 +50,7 @@ const projects = [
       'Real-time processing pipeline',
     ],
     category: 'AI/ML',
-    github: '#',
+    github: 'https://github.com/Abhinavkk742/Real-Time-Voice-To-Image-Converter',
     demo: '#',
   },
 ];
