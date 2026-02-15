@@ -137,6 +137,8 @@ const ProjectsSection = () => {
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-9 h-9 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Github size={16} />
