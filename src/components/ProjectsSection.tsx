@@ -21,7 +21,7 @@ const projects = [
     ],
     category: 'Full Stack',
     github: 'https://github.com/suja-l/KalyaniTimber',
-    demo: '#',
+    demo: '#', // Button will be hidden automatically until you replace this with a real URL
   },
   {
     title: 'Emotion-Driven Web Player',
@@ -143,12 +143,17 @@ const ProjectsSection = () => {
                   >
                     <Github size={16} />
                   </a>
-                  <a
-                    href={project.demo}
-                    className="w-9 h-9 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                  >
-                    <ExternalLink size={16} />
-                  </a>
+                  {/* Only render the demo button if a valid link exists */}
+                  {project.demo && project.demo !== '#' && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-9 h-9 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
                 </div>
               </div>
 
