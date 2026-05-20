@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Globe, Layers, Brain, LayoutDashboard, Palette, Plug } from 'lucide-react';
+import { Globe, Layers, Brain, Smartphone, Palette, Plug } from 'lucide-react';
 
 const services = [
   {
@@ -20,9 +20,9 @@ const services = [
     description: 'Implementing machine learning and AI capabilities into web applications.',
   },
   {
-    icon: LayoutDashboard,
-    title: 'Admin Dashboard Systems',
-    description: 'Custom admin panels with analytics, user management, and data visualization.',
+    icon: Smartphone,
+    title: 'Mobile App Development',
+    description: 'Native and cross-platform mobile applications with AI integration and offline capabilities.',
   },
   {
     icon: Palette,

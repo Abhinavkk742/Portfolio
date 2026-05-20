@@ -7,13 +7,13 @@ const skillCategories = [
   {
     icon: Code,
     title: 'Languages & Databases',
-    skills: ['JavaScript (ES6+)', 'Python', 'SQL', 'MongoDB', 'HTML5', 'CSS3'],
+    skills: ['JavaScript (ES6+)', 'Python', 'Kotlin', 'SQL', 'MongoDB', 'Room DB'],
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Layout,
-    title: 'Frontend',
-    skills: ['React.js', 'Vite', 'Tailwind CSS', 'Context API', 'Hooks', 'Figma'],
+    title: 'Frontend & App Dev',
+    skills: ['React.js', 'Android', 'Jetpack Compose', 'Tailwind CSS', 'Context API', 'Figma'],
     color: 'from-cyan-500 to-teal-500',
   },
   {
@@ -25,7 +25,7 @@ const skillCategories = [
   {
     icon: Wrench,
     title: 'Tools & AI',
-    skills: ['Docker', 'Git', 'Azure', 'Jenkins', 'OpenCV', 'TensorFlow', 'Faster Whisper'],
+    skills: ['Docker', 'Git', 'Azure', 'TensorFlow Lite', 'OpenCV', 'Jenkins', 'Faster Whisper'],
     color: 'from-violet-500 to-purple-500',
   },
 ];
@@ -97,7 +97,7 @@ const SkillsSection = () => {
           className="mt-16 glass-card p-8"
         >
           <div className="flex flex-wrap justify-center items-center gap-8 text-muted-foreground">
-            {['React', 'Node.js', 'MongoDB', 'Python', 'Docker', 'Azure', 'TensorFlow'].map((tech) => (
+            {['React', 'Kotlin', 'Android', 'Node.js', 'MongoDB', 'Python', 'Docker', 'TensorFlow Lite'].map((tech) => (
               <span key={tech} className="text-lg font-medium hover:text-primary transition-colors cursor-default">
                 {tech}
               </span>

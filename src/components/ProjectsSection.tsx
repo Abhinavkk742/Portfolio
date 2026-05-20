@@ -6,8 +6,24 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import projectTimber from '@/assets/project-timber.jpg';
 import projectEmotion from '@/assets/project-emotion.jpg';
 import projectVoice from '@/assets/project-voice.jpg';
+import projectHealthOracle from '@/assets/HealthOracle.png';
 
 const projects = [
+  {
+    title: 'HealthOracle – AI Diagnostic Platform',
+    description: 'An AI-powered health diagnostic Android application featuring skin disease classification and diabetes prediction.',
+    image: projectHealthOracle,
+    tags: ['Kotlin', 'TensorFlow Lite', 'Jetpack Compose', 'Android', 'Room DB'],
+    features: [
+      'On-device ML models for skin and diabetes diagnostics',
+      'Built with modern Jetpack Compose UI architecture',
+      'Integrated walk tracker and personal health records',
+      'Offline-first capability using Room Database',
+    ],
+    category: 'Mobile App',
+    github: 'https://github.com/Abhinavkk742/HealthOracle',
+    demo: '#',
+  },
   {
     title: 'Kalyani Timber – E-Commerce Platform',
     description: 'Full-stack MERN application for timber retail with comprehensive admin dashboard for product and order management.',
@@ -55,7 +71,7 @@ const projects = [
   },
 ];
 
-const categories = ['All', 'Full Stack', 'AI/ML'];
+const categories = ['All', 'Full Stack', 'AI/ML', 'Mobile App'];
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -90,7 +106,7 @@ const ProjectsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex justify-center gap-4 mb-12"
+          className="flex justify-center gap-4 mb-12 flex-wrap"
         >
           {categories.map((category) => (
             <button
